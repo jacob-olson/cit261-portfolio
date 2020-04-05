@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background: #050033;
+    color: #fff;
+}
+
+header {
+    padding-top: 1.5em;
+}
+
+header .fas {
+    font-size: 50px;
+    margin-bottom: .1em;
+}
+
+header h1 {
+    margin: 0 0 1em;
+}
+
+header h1:after {
+    background-color: #0A3A7A;
+    content: "";
+    display: block;
+    margin: 8px auto 0;
+    height: 5px;
+    width: 75px;
+}
+
+header p {
+    margin: 0;
+}
+
+main:before, #menu > li:last-child:after {
+    background-color: #0A3A7A;
+    content: "";
+    display: block;
+    margin: 1em auto;
+    height: 2px;
+    width: 100%;
+}
+
+
+main {
+    padding-top: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    margin: 0 0 1em;
+    position: relative;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+    
+    width: 300px;
+    height: 40px;
+    position: relative;
+    background: #0A3A7A;
+}
+
+#menu a:after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid #0A3A7A;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+#menu a:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #0A3A7A;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+
+.accordion {
+    
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.actionDelete {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    border: none;
+    background: 0;
+    color: #0A3A7A;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+}
+
+.actionDelete:hover, button:hover {
+    cursor: pointer;
+}
+
+
+
+#action {
+    color: #fff;
+    text-decoration: none;
+    background: #0A3A7A;
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    margin-left: -22.5px;
+    bottom: 50px;
+    width: 45px;
+    height: 45px;
+    border-radius: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+
+#action .fas {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+#action.hideForm {
+    background: darkred;
+    transition: all 0.2s ease-out;
+}
+
+#newRoutineForm {
+    position: absolute;
+    top: 150px;    
+    width: 80%;
+    height: 500px;
+    border: 3px solid #0A3A7A;
+    border-radius: 15px;
+    padding: 30px;
+    background: #050033;
+}
+
+#newRoutineForm ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#newRoutineForm ul li {
+    margin-bottom: 20px;
+}
+    
+#newRoutineForm #routineTitleInput {
+    border: 1px solid #0A3A7A;
+    border-radius: 10px;
+    background: transparent;
+    padding: 15px 20px;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#newRoutineForm .routineBodyInput {
+    border: 1px solid #0A3A7A;
+    border-radius: 10px;
+    background: transparent;
+    padding: 15px 20px;
+    color: #fff;
+    width: 100%;
+}
+
+#newRoutineForm #addRoutineButton {
+    background: #0A3A7A;
+    border: 0;
+    padding: 12px 35px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#newRoutineForm input[type="text"]::placeholder, #newRoutineForm textarea::placeholder {
+    color: #fff;
+    opacity: .8;
+    transition: all 0.2s ease-out;
+}
+
+#newRoutineForm input[type="text"]:focus::placeholder {
+    opacity: .3;
+}
+
+.validate, .validate::placeholder {
+    border-color: red !important;
+    color: red !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

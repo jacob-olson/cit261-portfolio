@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>Block 2 Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="b2-styles.css">
+    <script src="https://kit.fontawesome.com/79fd85642c.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <i class="fas fa-dumbbell"></i>
+        <h1>LiftWeight</h1>
+        <p>Select or Create a Routine</p>
+    </header>
+    <main>
+        <ul id="menu"></ul>
+        
+        <form id="newRoutineForm" class="hidden">
+            <ul>
+                <li><input id="routineTitleInput" type=text placeholder="New Routine Title" /></li>
+                <li><input class="routineBodyInput" type="text" placeholder="Add Exercise" /></li>
+                <li><input class="routineBodyInput" type="text" placeholder="Add Exercise" /></li>
+                <li><input class="routineBodyInput" type="text" placeholder="Add Exercise" /></li>
+                <li><input class="routineBodyInput" type="text" placeholder="Add Exercise" /></li>
+                <li><input class="routineBodyInput" type="text" placeholder="Add Exercise" /></li>
+                <li><button id="addRoutineButton">Add Routine</button></li>
+            </ul>
+        </form>
+        
+        <a id="action" href="#"><i class="fas fa-plus"></i></a>
+    </main>
+    
+    <script src='b2-main.js'></script>
+</body>
+</html>
