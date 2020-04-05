@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 340px;
+}
+
+header {
+    padding: 2em 0 .5em;
+    color: #fff;
+    background: orange;
+}
+
+#taskList {
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #CECECE;
+    margin: .5em 0;
+    padding: .5em 0;
+}
+
+#taskList li > input {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    
+/*
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+*/
+}
+
+input[type="checkbox"] + label:before {
+/*
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 3px;
+    border: 2px solid orange;
+*/
+}
+
+input[type="checkbox"]:checked + label:before {
+/*
+    background: #fff;
+    color: #333;
+    content: "\2713";
+    text-align: center;
+*/
+}
+
+input[type="checkbox"] + label:after {
+
+}
+
+#taskList li > label {
+    flex: 1 0 10em;
+    margin-left: 80px;
+}
+
+#taskList li > button {
+    flex: 0 0 30px;
+    font-size: 1.5em;
+    margin-left: -80px;
+}
